@@ -205,6 +205,8 @@
             border: 1px solid;
             border-radius: 8px;
             margin-right: 10px;
+            font-size: 14px;
+            line-height: 18px;
             font-family: 'Poppins-medium', sans-serif;
         }
 
@@ -253,23 +255,65 @@
         b {
             font-family: 'Poppins-semibold', sans-serif;
         }
-        .header-link + .header-link {
-            margin-left: 32px;
+
+        .header-link+.header-link {
+            margin-left: 30px;
         }
+
         .container {
             padding-left: 40px;
             padding-right: 40px;
         }
+
         .pb-30 {
             padding-bottom: 30px;
         }
+
+        .btn-link {
+            letter-spacing: 0.005em;
+            font-size: 15px;
+            font-weight: 600;
+            font-family: 'poppins-semibold', sans-serif;
+            line-height: 32px;
+            vertical-align: middle;
+        }
+
+        .btn-link img {
+            vertical-align: middle;
+        }
+
+        .btn-link--active {
+            padding: 4px 26px 4px 38px;
+        }
+
+        .btn-link--deactive {
+            padding: 4px 32px 4px 24px;
+        }
+        .social-link {
+            display: inline-block;
+        }
+        .text-category {
+            font-size: 24px;
+        }
         @media screen and (max-width: 480px) {
             .container {
-                padding-left: 20px;
-                padding-right: 20px;
+                padding-left: 15px;
+                padding-right: 15px;
             }
-            .header-link + .header-link {
+
+            .header-link+.header-link {
                 margin-left: 12px;
+            }
+
+            .btn-link--active {
+                padding: 4px 12px 4px 14px;
+            }
+
+            .btn-link {
+                font-size: 14px;
+            }
+            .text-category {
+                font-size: 20px;
             }
         }
     </style>
@@ -316,11 +360,12 @@
                 <tbody>
                     <tr>
                         <td bgcolor="#102437" class="container"
-                            style="border-bottom: 1px solid #17314D;padding-top: 16px;padding-bottom: 16px;">
+                            style="border-bottom: 1px solid #17314D;padding-top: 20px;padding-bottom: 20px;">
                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                 <tr>
                                     <td>
-                                        <a href="https://worksection.com/ua/ " style="text-decoration: none;">
+                                        <a href="https://worksection.com/ua/ "
+                                            style="text-decoration: none;display: inline-block;">
                                             <img src="img/header-logo.png" width="32" height="32" alt="worksection logo"
                                                 border="0" style="vertical-align: middle;margin-right: 12px;">
                                             <span
@@ -341,22 +386,23 @@
                         <td bgcolor="#0F1F2E " class="container"
                             style="padding-top: 64px;padding-bottom: 64px;font-family: 'poppins-regular';">
                             <h1
-                                style="font-family: 'Poppins-bold',sans-serif; max-width: 340px;margin: 0;font-size: 36px;line-height: 0.88; color: #ffffff;">
+                                style="font-family: 'Poppins-bold',sans-serif; max-width: 340px;margin: 0;font-size: 36px;line-height: 1.03; color: #ffffff;">
                                 Відновити ваш
                                 акаунт</h1>
                         </td>
                     </tr>
                     <tr>
-                        <td bgcolor="#ffffff" class="container" 
-                            style="font-family: 'poppins-regular';padding-top: 32px;padding-bottom: 32px;">
+                        <td bgcolor="#ffffff" class="container"
+                            style="font-family: 'poppins-regular';padding-top: 32px;padding-bottom: 16px;">
                             <span class="tag tag--gift">Подарунок</span>
                             <span class="tag tag--warn">Нагадування</span>
                         </td>
                     </tr>
                     <tr>
                         <td class="container" bgcolor="#ffffff">
-                            <h2 class="pb-30" style="font-family: 'Poppins-bold',sans-serif; margin: 0;">{{Name}}, вітаємо!</h2>
-                            <p class="pb-30"> 
+                            <h2 class="pb-30" style="font-family: 'Poppins-bold',sans-serif; margin: 0;">{{Name}},
+                                вітаємо!</h2>
+                            <p class="pb-30">
                                 Це лист від <b>Worksection</b>, сервісу управління проектами. Раніше ви створили акаунт
                                 <b>{{Account}}</b>, який зараз неактивний і заморожений.
                             </p>
@@ -369,15 +415,16 @@
                                 натисніть кнопку нижче і наші фахівці все зроблять:
                             </p>
                             <!-- Button : START -->
-                            <center style="padding-top: 20px;padding-bottom: 20px;">
+                            <center style="padding-top: 22px;padding-bottom: 20px;">
                                 <table role="presentation" align="center" cellspacing="0" cellpadding="0" border="0"
                                     class="center-on-narrow" style="text-align: center;">
                                     <tr>
                                         <td height="40" bgcolor="#0B5CFF" style="border-radius: 24px;overflow: hidden;">
-                                            <a href="#" color="#ffffff" class="btn"
-                                                style="font-family: 'Poppins-semibold',sans-serif; color: #ffffff;padding: 4px 16px 4px 32px;display: inline-block;text-decoration: none;">
+                                            <a href="#" color="#ffffff" class="btn btn-link btn-link--active"
+                                                style="vertical-align: middle;font-family: 'Poppins-semibold',sans-serif; color: #ffffff;display: inline-block;text-decoration: none;">
                                                 Активувати акаунт Worksection
-                                                <img style="margin-left: 17px;" src="img/arrow.png" alt="arrow">
+                                                <img style="vertical-align: middle;margin-left: 17px;"
+                                                    src="img/arrow.png" alt="arrow">
                                             </a>
                                         </td>
                                     </tr>
@@ -394,8 +441,9 @@
                                     <tr>
                                         <td>
                                             <p style="padding-bottom: 16px;">
-                                                <img src="img/alert.png" alt="alert">
-                                                <b>Зверніть увагу!</b> Якщо акаунт вам більше не потрібен, ми видалемо всі дані
+                                                <img style="vertical-align: baseline;" src="img/alert.png" alt="alert">
+                                                <b>Зверніть увагу!</b> Якщо акаунт вам більше не потрібен, ми видалемо
+                                                всі дані
                                                 автоматично через <b>30 днів.</b>
                                             </p>
                                         </td>
@@ -409,55 +457,61 @@
                                     </tr>
                                     <tr>
                                         <td class="pb-30">
-                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center"
-                                                width="100%" style="vertical-align: sub;text-align: center;">
+                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                                align="center" width="100%"
+                                                style="vertical-align: sub;text-align: center;">
                                                 <tbody>
-                                                    <tr  style="vertical-align: sub">
+                                                    <tr style="vertical-align: sub">
                                                         <td>
                                                             <table role="presentation" cellspacing="0" cellpadding="0"
                                                                 border="0" width="100%">
-                                                                <tr  style="vertical-align: sub">
+                                                                <tr style="vertical-align: sub">
                                                                     <td>
                                                                         <img style="margin-bottom: 15px;"
-                                                                            src="img/pic-1.png" alt="">
-                                                                        <p color="#272F37"
-                                                                            style="font-size: 24px;line-height: 1;font-family: 'poppins-semibold',sans-serif;">6
+                                                                            src="img/pic-1.png" alt="projects">
+                                                                        <p color="#272F37" class="text-category"
+                                                                            style="margin-bottom: 12px;line-height: 1;font-family: 'poppins-semibold',sans-serif;">
+                                                                            6
                                                                         </p>
                                                                         <span color="#8F99A3"
                                                                             style="font-size: 12px;color: #8F99A3;line-height: 1.33;">проектів</span>
                                                                     </td>
                                                                     <td>
                                                                         <img style="margin-bottom: 15px;"
-                                                                            src="img/pic-2.png" alt="">
-                                                                        <p color="#272F37"
-                                                                            style="font-size: 24px;line-height: 1;font-family: 'poppins-semibold',sans-serif;">159
+                                                                            src="img/pic-2.png" alt="tasks">
+                                                                        <p color="#272F37" class="text-category"
+                                                                            style="margin-bottom: 12px;line-height: 1;font-family: 'poppins-semibold',sans-serif;">
+                                                                            159
                                                                         </p>
                                                                         <span color="#8F99A3"
                                                                             style="font-size: 12px;color: #8F99A3;line-height: 1.33;">задач</span>
                                                                     </td>
                                                                     <td>
                                                                         <img style="margin-bottom: 15px;"
-                                                                            src="img/pic-3.png" alt="">
-                                                                        <p color="#272F37"
-                                                                            style="font-size: 24px;line-height: 1;font-family: 'poppins-semibold',sans-serif;">12
+                                                                            src="img/pic-3.png" alt="users">
+                                                                        <p color="#272F37" class="text-category"
+                                                                            style="margin-bottom: 12px;line-height: 1;font-family: 'poppins-semibold',sans-serif;">
+                                                                            12
                                                                         </p>
                                                                         <span color="#8F99A3"
-                                                                            style="font-size: 12px;color: #8F99A3;line-height: 1.33;">користувачів</span>
+                                                                            style="margin-bottom: 12px;font-size: 12px;color: #8F99A3;line-height: 1.33;">користувачів</span>
                                                                     </td>
                                                                     <td>
                                                                         <img style="margin-bottom: 15px;"
-                                                                            src="img/pic-4.png" alt="">
-                                                                        <p color="#272F37"
-                                                                            style="font-size: 24px;line-height: 1;font-family: 'poppins-semibold',sans-serif;">10
+                                                                            src="img/pic-4.png" alt="files">
+                                                                        <p color="#272F37" class="text-category"
+                                                                            style="margin-bottom: 12px;line-height: 1;font-family: 'poppins-semibold',sans-serif;">
+                                                                            10
                                                                             Мб</p>
                                                                         <span color="#8F99A3"
                                                                             style="font-size: 12px;color: #8F99A3;line-height: 1.33;">файлів</span>
                                                                     </td>
                                                                     <td>
                                                                         <img style="margin-bottom: 15px;"
-                                                                            src="img/pic-5.png" alt="">
-                                                                        <p color="#272F37"
-                                                                            style="font-size: 24px;line-height: 1;font-family: 'poppins-semibold',sans-serif;">712
+                                                                            src="img/pic-5.png" alt="comments">
+                                                                        <p color="#272F37" class="text-category"
+                                                                            style="margin-bottom: 12px;line-height: 1;font-family: 'poppins-semibold',sans-serif;">
+                                                                            712
                                                                         </p>
                                                                         <span color="#8F99A3"
                                                                             style="font-size: 12px;color: #8F99A3;line-height: 1.33;">коментарів</span>
@@ -479,17 +533,18 @@
                                     <tr>
                                         <td bgcolor="#ffffff">
                                             <!-- Button : START -->
-                                            <center style="padding-top: 20px;padding-bottom: 20px;">
+                                            <center style="padding-top: 22px;padding-bottom: 20px;">
                                                 <table role="presentation" align="center" cellspacing="0"
                                                     cellpadding="0" border="0" class="center-on-narrow"
                                                     style="text-align: center;">
                                                     <tr>
                                                         <td height="40" bgcolor="#EB4763" valign="middle"
                                                             style="border-radius: 24px;overflow: hidden;">
-                                                            <a href="#" color="#ffffff" class="btn"
-                                                                style="font-family: 'Poppins-semibold',sans-serif; vertical-align: super;color: #ffffff;padding: 4px 32px 4px 24px;display: inline-block;text-decoration: none;">
-                                                                <img style="vertical-align: sub;margin-right: 13px;"
-                                                                    src="img/delete.png" alt="arrow">
+                                                            <a href="#" color="#ffffff"
+                                                                class="btn btn-link btn-link--deactive"
+                                                                style="font-family: 'Poppins-semibold',sans-serif;color: #ffffff;display: inline-block;text-decoration: none;">
+                                                                <img style="margin-right: 13px;" src="img/delete.png"
+                                                                    alt="arrow">
                                                                 Видалити акаунт зараз
                                                             </a>
                                                         </td>
@@ -504,8 +559,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td bgcolor="#ffffff" class="container" style="padding-bottom: 40px;">
-                            <h3 style="margin: 0;">Продуктивної роботи!</h3>
+                        <td bgcolor="#ffffff" class="container" style="padding-bottom: 32px;">
+                            <h3 style="margin: 0;padding-bottom: 10px;">Продуктивної роботи!</h3>
                             <p>
                                 Команда Worksection
                             </p>
@@ -524,23 +579,23 @@
                                 <tr>
                                     <td style="padding-bottom: 21px;padding-top: 31px;">
                                         <center>
-                                            <a href="https://t.me/worksection_ua" class="btn"
+                                            <a target="_blank" href="https://t.me/worksection_ua" class="btn social-link"
                                                 style="margin-left: 9px;margin-right: 7px;">
                                                 <img src="img/telegram.png" alt="telegram" width="30" height="30">
                                             </a>
-                                            <a href="https://www.youtube.com/c/Worksection-de/videos" class="btn"
+                                            <a target="_blank" href="https://www.youtube.com/c/Worksection-de/videos" class="btn  social-link"
                                                 style="margin-left: 9px;margin-right: 7px;">
                                                 <img src="img/youtube.png" alt="youtube" width="30" height="30">
                                             </a>
-                                            <a href="https://www.linkedin.com/company/worksection" class="btn"
+                                            <a target="_blank" href="https://www.linkedin.com/company/worksection" class="btn  social-link"
                                                 style="margin-left: 9px;margin-right: 7px;">
                                                 <img src="img/linkedin.png" alt="linkedin" width="30" height="30">
                                             </a>
-                                            <a href="https://www.facebook.com/worksection.official" class="btn"
+                                            <a target="_blank" href="https://www.facebook.com/worksection.official" class="btn social-link"
                                                 style="margin-left: 9px;margin-right: 7px;">
                                                 <img src="img/facebook.png" alt="facebook" width="30" height="30">
                                             </a>
-                                            <a href="https://twitter.com/worksection" class="btn"
+                                            <a target="_blank" href="https://twitter.com/worksection" class="btn social-link"
                                                 style="margin-left: 9px;margin-right: 7px;">
                                                 <img src="img/twitter.png" alt="twitter" width="30" height="30">
                                             </a>
@@ -559,8 +614,10 @@
                                         <center>
                                             <a href="tel:+3800000000" class="btn footer-text"
                                                 style="color: #8F99A3;margin-right: 3px;">+380 00 00
-                                                000</a> 
-                                                <span class="footer-text" style="vertical-align: unset;font-size: 30px;line-height: 0.4;color: #8F99A3;">   . </span>
+                                                000</a>
+                                            <span class="footer-text"
+                                                style="vertical-align: unset;font-size: 30px;line-height: 0.4;color: #8F99A3;">
+                                                . </span>
                                             <a href="mailto:info@worksection.com" class="btn footer-text"
                                                 style="color: #8F99A3;">info@worksection.com</a>
                                         </center>
