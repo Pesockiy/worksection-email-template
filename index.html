@@ -16,7 +16,7 @@
     <!--[if mso]>
 		<style>
 			* {
-				font-family: Arial, sans-serif !important;
+				font-family: Arial,  sans-serif !important;
 			}
 		</style>
 	<![endif]-->
@@ -82,25 +82,25 @@
         }
 
         @font-face {
-            font-family: 'Montserrat-bold';
-            src: url('fonts/montserrat-bold.eot');
-            src: url('fonts/montserrat-bold.eot?#iefix') format('embedded-opentype'),
-                url('fonts/montserrat-bold.svg#montserrat-bold') format('svg'),
-                url('fonts/montserrat-bold.ttf') format('truetype'),
-                url('fonts/montserrat-bold.woff') format('woff'),
-                url('fonts/montserrat-bold.woff2') format('woff2');
+            font-family: 'Montserrat-Bold';
+            src: url('fonts/Montserrat-Bold.eot');
+            src: url('fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+                url('fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg'),
+                url('fonts/Montserrat-Bold.ttf') format('truetype'),
+                url('fonts/Montserrat-Bold.woff') format('woff'),
+                url('fonts/Montserrat-Bold.woff2') format('woff2');
             font-weight: normal;
             font-style: normal;
         }
 
         @font-face {
             font-family: 'Montserrat-Medium';
-            src: url('fonts/montserrat-Medium.eot');
-            src: url('fonts/montserrat-Medium.eot?#iefix') format('embedded-opentype'),
-                url('fonts/montserrat-Medium.svg#montserrat-Medium') format('svg'),
-                url('fonts/montserrat-Medium.ttf') format('truetype'),
-                url('fonts/montserrat-Medium.woff') format('woff'),
-                url('fonts/montserrat-Medium.woff2') format('woff2');
+            src: url('fonts/Montserrat-Medium.eot');
+            src: url('fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+                url('fonts/Montserrat-Medium.svg#Montserrat-Medium') format('svg'),
+                url('fonts/Montserrat-Medium.ttf') format('truetype'),
+                url('fonts/Montserrat-Medium.woff') format('woff'),
+                url('fonts/Montserrat-Medium.woff2') format('woff2');
             font-weight: normal;
             font-style: normal;
         }
@@ -207,7 +207,8 @@
             margin-right: 10px;
             font-size: 14px;
             line-height: 18px;
-            font-family: 'Poppins-medium', sans-serif;
+            font-family: 'Poppins-medium', Arial, sans-serif;
+            font-weight: 500;
         }
 
         .tag--gift {
@@ -228,7 +229,9 @@
             padding: 0;
             margin: 0;
             vertical-align: middle;
-            font-family: 'Poppins-regular', sans-serif;
+            font-family: 'Poppins-regular', Arial, sans-serif;
+            font-weight: 400;
+            color: #8F99A3 !important;
         }
 
         h1,
@@ -237,25 +240,44 @@
         h4,
         h5,
         h6 {
-            font-family: 'Poppins-bold', sans-serif;
+            font-family: 'Poppins-bold', Arial, sans-serif;
+            font-weight: 700;
+        }
+
+        h2,
+        h3 {
+            color: #272F37 !important;
         }
 
         p {
-            font-family: 'Poppins-regular', sans-serif;
+            font-family: 'Poppins-regular', Arial, sans-serif;
+            font-weight: 400;
             font-size: 18px;
             line-height: 28px;
             padding: 0;
             margin: 0;
+            color: #272F37 !important;
+            text-decoration: none !important;
         }
+
         p a {
-            color: #272F37;
+            color: #8F99A3 !important;
+            text-decoration: none !important;
         }
+
+        a p {
+            color: #8F99A3 !important;
+            text-decoration: none !important;
+        }
+
         span {
-            font-family: 'poppins-regular', sans-serif;
+            font-family: 'poppins-regular', Arial, sans-serif;
+            font-weight: 400;
         }
 
         b {
-            font-family: 'Poppins-semibold', sans-serif;
+            font-family: 'Poppins-semibold', Arial, sans-serif;
+            font-weight: 600;
         }
 
         .header-link+.header-link {
@@ -263,8 +285,12 @@
         }
 
         .container {
-            padding-left: 40px;
-            padding-right: 40px;
+            padding-left: 40px!important;
+            padding-right: 40px!important;
+        }
+
+        .dot {
+            font-family: initial;
         }
 
         .pb-30 {
@@ -275,9 +301,11 @@
             letter-spacing: 0.005em;
             font-size: 15px;
             font-weight: 600;
-            font-family: 'poppins-semibold', sans-serif;
+            font-family: 'poppins-semibold', Arial, sans-serif;
+            font-weight: 600;
             line-height: 32px;
             vertical-align: middle;
+            color: #ffffff !important;
         }
 
         .btn-link img {
@@ -291,16 +319,23 @@
         .btn-link--deactive {
             padding: 4px 32px 4px 24px;
         }
+
         .social-link {
             display: inline-block;
         }
+
         .text-category {
             font-size: 24px;
         }
+
+        .x {
+            color: #8B9DC1 !important;
+        }
+
         @media screen and (max-width: 480px) {
             .container {
-                padding-left: 15px;
-                padding-right: 15px;
+                padding-left: 15px!important;
+                padding-right: 15px!important;
             }
 
             .header-link+.header-link {
@@ -314,8 +349,30 @@
             .btn-link {
                 font-size: 14px;
             }
+
             .text-category {
                 font-size: 20px;
+            }
+        }
+
+        @media screen and (max-width: 380px) {
+            .s {
+                word-break: break-word;
+                line-height: 1.2;
+            }
+        }
+
+        @media screen and (max-width: 350px) {
+            .w {
+                width: 62%;
+            }
+
+            .text-category {
+                font-size: 18px;
+            }
+
+            .btn-link {
+                font-size: 12px;
             }
         }
     </style>
@@ -332,12 +389,12 @@
 
 </head>
 
-<body width="100%" style="margin: 0; mso-line-height-rule: exactly;">
+<body width="100%" style="margin: 0; mso-line-height-rule: exactly;background-color: #EBEFF2!important;">
     <center style="width: 100%;text-align: left;">
 
         <!-- Visually Hidden Preheader Text : BEGIN -->
         <div
-            style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: sans-serif;">
+            style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-weight:600;font-family: Arial, sans-serif;">
         </div>
         <!-- Visually Hidden Preheader Text : END -->
 
@@ -362,23 +419,23 @@
                 <tbody>
                     <tr>
                         <td bgcolor="#102437" class="container"
-                            style="border-bottom: 1px solid #17314D;padding-top: 20px;padding-bottom: 20px;">
+                            style="border-bottom: 1px solid #17314D;padding-top: 20px;padding-bottom: 20px;padding-left: 15px;padding-right: 15px;">
                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                 <tr>
-                                    <td>
+                                    <td class="w">
                                         <a href="https://worksection.com/ua/ "
                                             style="text-decoration: none;display: inline-block;">
                                             <img src="img/header-logo.png" width="32" height="32" alt="worksection logo"
                                                 border="0" style="vertical-align: middle;margin-right: 12px;">
                                             <span
-                                                style="font-weight: 700;font-size: 16px;line-height: 1;font-family: 'Montserrat-Bold',sans-serif;color: #ffffff;vertical-align: middle;">worksection</span>
+                                                style="font-weight: 700;font-size: 16px;line-height: 1;font-weight:700;font-family: 'Montserrat-Bold',Arial, sans-serif;color: #ffffff;vertical-align: middle;">worksection</span>
                                         </a>
                                     </td>
                                     <td align="right">
                                         <a href="https://worksection.com/ua/blog.html " class="header-link"
-                                            style="font-size: 14px;line-height: 1;font-family: 'Montserrat-Medium',sans-serif;color: #ffffff;">Блог</a>
+                                            style="font-size: 14px;line-height: 1;font-weight:500;font-family: 'Montserrat-Medium',Arial, sans-serif;color: #ffffff;">Блог</a>
                                         <a href="https://worksection.com/ua/faq.html" class="header-link"
-                                            style="font-size: 14px;line-height: 1;font-family: 'Montserrat-Medium',sans-serif;color: #ffffff;">Допомога</a>
+                                            style="margin-left:15px;font-size: 14px;line-height: 1;font-weight:500;font-family: 'Montserrat-Medium',Arial, sans-serif;color: #ffffff;">Допомога</a>
                                     </td>
                                 </tr>
                             </table>
@@ -386,33 +443,35 @@
                     </tr>
                     <tr>
                         <td bgcolor="#0F1F2E " class="container"
-                            style="padding-top: 64px;padding-bottom: 64px;font-family: 'poppins-regular';">
+                            style="padding-top: 64px;padding-bottom: 64px;padding-left: 15px;padding-right: 15px;font-weight:400;font-family: 'poppins-regular';">
                             <h1
-                                style="font-family: 'Poppins-bold',sans-serif; max-width: 340px;margin: 0;font-size: 36px;line-height: 1.03; color: #ffffff;">
+                                style="margin:0;padding:0;font-family: 'Poppins-bold',Arial, sans-serif;font-weight:700; max-width: 340px;margin: 0;font-size: 36px;line-height: 1.03; color: #ffffff;">
                                 Відновити ваш
                                 акаунт</h1>
                         </td>
                     </tr>
                     <tr>
                         <td bgcolor="#ffffff" class="container"
-                            style="font-family: 'poppins-regular';padding-top: 32px;padding-bottom: 16px;">
-                            <span class="tag tag--gift">Подарунок</span>
-                            <span class="tag tag--warn">Нагадування</span>
+                            style="font-weight:400;font-family: 'poppins-regular',Arial, sans-serif;padding-top: 32px;padding-bottom: 16px;padding-left: 15px;padding-right: 15px;">
+                            <span style="font-size: 14px;line-height: 18px;margin-right:10px;font-family: 'Poppins-medium', Arial, sans-serif;font-weight: 500;display: inline-block;padding: 4px 10px;color:#08BD66;border: 1px solid;border-radius: 8px;border-color:#08BD66;font-weight:400;font-family: 'poppins-regular',Arial, sans-serif;" class="tag tag--gift">Подарунок</span>
+                            <span style="font-size: 14px;line-height: 18px;margin-right:10px;font-family: 'Poppins-medium', Arial, sans-serif;font-weight: 500;display: inline-block;padding: 4px 10px;color:#EB4763;border: 1px solid;border-radius: 8px;border-color:#EB4763;font-weight:400;font-family: 'poppins-regular',Arial, sans-serif;" class="tag tag--warn">Нагадування</span>
                         </td>
                     </tr>
                     <tr>
-                        <td class="container" bgcolor="#ffffff">
-                            <h2 class="pb-30" style="font-family: 'Poppins-bold',sans-serif; margin: 0;">{{Name}},
+                        <td class="container" bgcolor="#ffffff" style="padding-left: 15px;padding-right: 15px;">
+                            <h2 class="pb-30"
+                                style="margin:0;padding:0;padding-bottom:30px;color: #272F37!important;font-weight:700;font-family: 'Poppins-bold',Arial, sans-serif; margin: 0;">
+                                {{Name}},
                                 вітаємо!</h2>
-                            <p class="pb-30">
+                            <p class="pb-30" style="margin:0;padding:0;padding-bottom:30px;color: #272F37!important;">
                                 Це лист від <b>Worksection</b>, сервісу управління проектами. Раніше ви створили акаунт
                                 <b>{{Account}}</b>, який зараз неактивний і заморожений.
                             </p>
-                            <p class="pb-30">
+                            <p class="pb-30"  style="margin:0;padding:0;padding-bottom:30px;color: #272F37!important;">
                                 За останній час ми суттєво оновили сервіс, додали Дашборд проекту, розширили можливості
                                 Діаграми Ганта, і поліпшили інший функціонал системи.
                             </p>
-                            <p class="pb-30">
+                            <p class="pb-30" style="margin:0;padding:0;padding-bottom:30px;color: #272F37!important;">
                                 Пропонуємо вам <b>безкоштовний тиждень</b>, щоб ознайомитися з останніми змінами. Просто
                                 натисніть кнопку нижче і наші фахівці все зроблять:
                             </p>
@@ -422,8 +481,8 @@
                                     class="center-on-narrow" style="text-align: center;">
                                     <tr>
                                         <td height="40" bgcolor="#0B5CFF" style="border-radius: 24px;overflow: hidden;">
-                                            <a href="#" color="#ffffff" class="btn btn-link btn-link--active"
-                                                style="vertical-align: middle;font-family: 'Poppins-semibold',sans-serif; color: #ffffff;display: inline-block;text-decoration: none;">
+                                            <a href="https://worksection.com/ua/" color="#ffffff" class="btn btn-link btn-link--active"
+                                                style="vertical-align: middle;font-weight:600;font-family: 'Poppins-semibold',Arial, sans-serif; color: #ffffff;display: inline-block;text-decoration: none;">
                                                 Активувати акаунт Worksection
                                                 <img style="vertical-align: middle;margin-left: 17px;"
                                                     src="img/arrow.png" alt="arrow">
@@ -437,12 +496,12 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="container" bgcolor="#ffffff" style="padding-top: 30px;padding-bottom: 32px;">
+                        <td class="container" bgcolor="#ffffff" style="padding-top: 30px;padding-bottom: 32px;padding-left: 15px;padding-right: 15px;">
                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <p style="padding-bottom: 16px;">
+                                            <p  style="margin:0;padding:0;padding-bottom:20px;color: #272F37!important;padding-bottom: 16px;">
                                                 <img style="vertical-align: baseline;" src="img/alert.png" alt="alert">
                                                 <b>Зверніть увагу!</b> Якщо акаунт вам більше не потрібен, ми видалемо
                                                 всі дані
@@ -452,7 +511,7 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <p class="pb-30">
+                                            <p class="pb-30" style="margin:0;padding:0;padding-bottom:30px;color: #272F37!important;">
                                                 В вашому акаунті:
                                             </p>
                                         </td>
@@ -471,51 +530,56 @@
                                                                     <td>
                                                                         <img style="margin-bottom: 15px;"
                                                                             src="img/pic-1.png" alt="projects">
-                                                                        <p color="#272F37" class="text-category"
-                                                                            style="margin-bottom: 12px;line-height: 1;font-family: 'poppins-semibold',sans-serif;">
+                                                                        <p color="#272F37!important"
+                                                                            class="text-category"
+                                                                            style="margin:0;padding:0;color:#272F37!important;margin-bottom: 12px;font-weight:600;line-height: 1;font-family: 'poppins-semibold',Arial, sans-serif;">
                                                                             6
                                                                         </p>
-                                                                        <span color="#8F99A3"
+                                                                        <span class="s" color="#8F99A3"
                                                                             style="font-size: 12px;color: #8F99A3;line-height: 1.33;">проектів</span>
                                                                     </td>
                                                                     <td>
                                                                         <img style="margin-bottom: 15px;"
                                                                             src="img/pic-2.png" alt="tasks">
-                                                                        <p color="#272F37" class="text-category"
-                                                                            style="margin-bottom: 12px;line-height: 1;font-family: 'poppins-semibold',sans-serif;">
+                                                                        <p color="#272F37!important"
+                                                                            class="text-category"
+                                                                            style="margin:0;padding:0;color:#272F37!important;margin-bottom: 12px;line-height: 1;font-weight:600;font-family: 'poppins-semibold',Arial, sans-serif;">
                                                                             159
                                                                         </p>
-                                                                        <span color="#8F99A3"
+                                                                        <span class="s" color="#8F99A3"
                                                                             style="font-size: 12px;color: #8F99A3;line-height: 1.33;">задач</span>
                                                                     </td>
                                                                     <td>
                                                                         <img style="margin-bottom: 15px;"
                                                                             src="img/pic-3.png" alt="users">
-                                                                        <p color="#272F37" class="text-category"
-                                                                            style="margin-bottom: 12px;line-height: 1;font-family: 'poppins-semibold',sans-serif;">
+                                                                        <p color="#272F37!important"
+                                                                            class="text-category"
+                                                                            style="margin:0;padding:0;color:#272F37!important;margin-bottom: 12px;line-height: 1;font-weight:600;font-family: 'poppins-semibold',Arial, sans-serif;">
                                                                             12
                                                                         </p>
-                                                                        <span color="#8F99A3"
+                                                                        <span class="s" color="#8F99A3"
                                                                             style="margin-bottom: 12px;font-size: 12px;color: #8F99A3;line-height: 1.33;">користувачів</span>
                                                                     </td>
                                                                     <td>
                                                                         <img style="margin-bottom: 15px;"
                                                                             src="img/pic-4.png" alt="files">
-                                                                        <p color="#272F37" class="text-category"
-                                                                            style="margin-bottom: 12px;line-height: 1;font-family: 'poppins-semibold',sans-serif;">
+                                                                        <p color="#272F37!important"
+                                                                            class="text-category"
+                                                                            style="margin:0;padding:0;color:#272F37!important;margin-bottom: 12px;line-height: 1;font-weight:600;font-family: 'poppins-semibold',Arial, sans-serif;">
                                                                             10
                                                                             Мб</p>
-                                                                        <span color="#8F99A3"
+                                                                        <span class="s" color="#8F99A3"
                                                                             style="font-size: 12px;color: #8F99A3;line-height: 1.33;">файлів</span>
                                                                     </td>
                                                                     <td>
                                                                         <img style="margin-bottom: 15px;"
                                                                             src="img/pic-5.png" alt="comments">
-                                                                        <p color="#272F37" class="text-category"
-                                                                            style="margin-bottom: 12px;line-height: 1;font-family: 'poppins-semibold',sans-serif;">
+                                                                        <p color="#272F37!important"
+                                                                            class="text-category"
+                                                                            style="margin:0;padding:0;color:#272F37!important;margin-bottom: 12px;line-height: 1;font-weight:600;font-family: 'poppins-semibold',Arial, sans-serif;">
                                                                             712
                                                                         </p>
-                                                                        <span color="#8F99A3"
+                                                                        <span class="s" color="#8F99A3"
                                                                             style="font-size: 12px;color: #8F99A3;line-height: 1.33;">коментарів</span>
                                                                     </td>
                                                                 </tr>
@@ -542,9 +606,9 @@
                                                     <tr>
                                                         <td height="40" bgcolor="#EB4763" valign="middle"
                                                             style="border-radius: 24px;overflow: hidden;">
-                                                            <a href="#" color="#ffffff"
+                                                            <a href="https://worksection.com/ua/" color="#ffffff"
                                                                 class="btn btn-link btn-link--deactive"
-                                                                style="font-family: 'Poppins-semibold',sans-serif;color: #ffffff;display: inline-block;text-decoration: none;">
+                                                                style="font-weight:600;font-family: 'Poppins-semibold',Arial, sans-serif;color: #ffffff;display: inline-block;text-decoration: none;">
                                                                 <img style="margin-right: 13px;" src="img/delete.png"
                                                                     alt="arrow">
                                                                 Видалити акаунт зараз
@@ -561,9 +625,9 @@
                         </td>
                     </tr>
                     <tr>
-                        <td bgcolor="#ffffff" class="container" style="padding-bottom: 32px;">
-                            <h3 style="margin: 0;padding-bottom: 10px;">Продуктивної роботи!</h3>
-                            <p>
+                        <td bgcolor="#ffffff" class="container" style="padding-bottom: 32px;padding-left: 15px;padding-right: 15px;">
+                            <h3 style="color: #272F37!important;margin: 0;">Продуктивної роботи!</h3>
+                            <p style="margin:0;padding:0;color: #272F37!important;">
                                 Команда Worksection
                             </p>
                         </td>
@@ -581,44 +645,44 @@
                                 <tr>
                                     <td style="padding-bottom: 21px;padding-top: 31px;">
                                         <center>
-                                            <a target="_blank" href="https://t.me/worksection_ua" class="btn social-link"
-                                                style="margin-left: 9px;margin-right: 7px;">
+                                            <a target="_blank" href="https://t.me/worksection_ua"
+                                                class="btn social-link" style="margin-left: 9px;margin-right: 7px;">
                                                 <img src="img/telegram.png" alt="telegram" width="32" height="32">
                                             </a>
-                                            <a target="_blank" href="https://www.youtube.com/c/Worksection-de/videos" class="btn  social-link"
-                                                style="margin-left: 9px;margin-right: 7px;">
+                                            <a target="_blank" href="https://www.youtube.com/c/Worksection-de/videos"
+                                                class="btn  social-link" style="margin-left: 9px;margin-right: 7px;">
                                                 <img src="img/youtube.png" alt="youtube" width="32" height="32">
                                             </a>
-                                            <a target="_blank" href="https://www.linkedin.com/company/worksection" class="btn  social-link"
-                                                style="margin-left: 9px;margin-right: 7px;">
+                                            <a target="_blank" href="https://www.linkedin.com/company/worksection"
+                                                class="btn  social-link" style="margin-left: 9px;margin-right: 7px;">
                                                 <img src="img/linkedin.png" alt="linkedin" width="32" height="32">
                                             </a>
-                                            <a target="_blank" href="https://www.facebook.com/worksection.official" class="btn social-link"
-                                                style="margin-left: 9px;margin-right: 7px;">
+                                            <a target="_blank" href="https://www.facebook.com/worksection.official"
+                                                class="btn social-link" style="margin-left: 9px;margin-right: 7px;">
                                                 <img src="img/facebook.png" alt="facebook" width="32" height="32">
                                             </a>
-                                            <a target="_blank" href="https://twitter.com/worksection" class="btn social-link"
-                                                style="margin-left: 9px;margin-right: 7px;">
+                                            <a target="_blank" href="https://twitter.com/worksection"
+                                                class="btn social-link" style="margin-left: 9px;margin-right: 7px;">
                                                 <img src="img/twitter.png" alt="twitter" width="32" height="32">
                                             </a>
                                         </center>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="container" style="padding-bottom: 30px;">
-                                        <center>
-                                            <p class="footer-text" style="color: #8F99A3;">ТОВ “ВОРКСЕКШН”</p>
+                                    <td class="container" style="padding-bottom: 30px;padding-left: 15px;padding-right: 15px;">
+                                        <center style="margin: 0;padding: 0;">
+                                            <p class="footer-text" style="margin:0;padding:0;color: #8F99A3;">ТОВ “ВОРКСЕКШН”</p>
                                         </center>
-                                        <center>
-                                            <p class="footer-text" style="color: #8F99A3;">Київ, Ярославський провулок,
+                                        <center style="margin: 0;padding: 0;">
+                                            <p class="footer-text" style="margin:0;padding:0;color: #8F99A3;">Київ, Ярославський провулок,
                                                 7/9</p>
                                         </center>
-                                        <center>
+                                        <center style="margin: 0;padding: 0;">
                                             <a href="tel:+3800000000" class="btn footer-text"
                                                 style="color: #8F99A3;margin-right: 3px;">+380 00 00
                                                 000</a>
-                                            <span class="footer-text"
-                                                style="vertical-align: unset;font-size: 30px;line-height: 0.4;color: #8F99A3;">
+                                            <span class="footer-text dot"
+                                                style="font-family:initial;vertical-align: unset;font-size: 30px;line-height: 0.4;color: #8F99A3;">
                                                 . </span>
                                             <a href="mailto:info@worksection.com" class="btn footer-text"
                                                 style="color: #8F99A3;">info@worksection.com</a>
@@ -636,8 +700,8 @@
                                     Ви отримали цей лист тому, що зареєстрували
                                     обліковий запис Worksection на цей email
                                 </p>
-                                <a href="#" class="footer-text"
-                                    style="color: #8B9DC1;margin-bottom: 24px;display: block;">Відписатись від розсилки
+                                <a href="https://worksection.com/ua/" class="footer-text x" color="#8B9DC1"
+                                    style="text-decoration:underline!important;color: #8B9DC1;margin-bottom: 24px;display: block;">Відписатись від розсилки
                                     Worksection</a>
                                 <a href="https://worksection.com/ua/" class="footer-text btn" style="display: block;">
                                     <img width="32" height="32" src="img/footer-logo.png" alt="worksection logo">
